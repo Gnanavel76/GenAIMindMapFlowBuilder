@@ -1,5 +1,6 @@
 import DataSourceSet from "../nodes/DataSourceSet";
 import CSVSvg from "../assets/csv.svg";
+import XLSXSvg from "../assets/xlsx.svg";
 import SQLSvg from "../assets/sql.svg";
 import PDFSvg from "../assets/pdf.svg"
 import WEBSvg from "../assets/web.svg"
@@ -23,6 +24,7 @@ const DataSourceSelect = () => {
 				? (
 				<>
 					<DataSourceSet data={{ img: CSVSvg, content: "CSV", name: "csv" }} />
+					<DataSourceSet data={{ img: XLSXSvg, content: "XLSX", name: "xlsx" }} />
 					<DataSourceSet data={{ img: SQLSvg, content: "Connect SQL", name: "sql" }} />
 				</>
 				) 
@@ -30,12 +32,12 @@ const DataSourceSelect = () => {
 				}
 				<DataSourceSet data={{ img: PDFSvg, content: "PDF", name: "pdf" }} />
 				<DataSourceSet data={{ img: WEBSvg, content: "Enter Url", name: "web" }} />
-				<DataSourceSet data={{ img: AudioSvg, content: "Select Audio File", name: "audio" }} />
+				{/* <DataSourceSet data={{ img: AudioSvg, content: "Select Audio File", name: "audio" }} /> */}
 				<DataSourceSet data={{ img: MDSvg, content: "Select MD File", name: "md" }} />
-				<DataSourceSet data={{ img: YOUTUBESvg, content: "Connect Youtube", name: 'youtube' }} />
+				{/* <DataSourceSet data={{ img: YOUTUBESvg, content: "Connect Youtube", name: 'youtube' }} /> */}
 				<DataSourceSet data={{ img: IMGSvg, content: "Select Image file ", name: 'img' }} />
 				<DataSourceSet data={{ img: DOCXSvg, content: "Select Docx file ", name: 'docx' }} />
-				<DataSourceSet data={{ img: PPTXSvg, content: "Select PPTX file ", name: 'pptx' }} />
+				{/* <DataSourceSet data={{ img: PPTXSvg, content: "Select PPTX file ", name: 'pptx' }} /> */}
 				<DataSourceSet data={{ img: HTMLSvg, content: "Select HTML file ", name: 'html' }} />
 				<DataSourceSet data={{ img: TXTSvg, content: "Select TEXT file ", name: 'txt' }} />
 				<DataSourceSet data={{ img: VIDEOSvg, content: "Select VIDEO file ", name: 'video' }} />

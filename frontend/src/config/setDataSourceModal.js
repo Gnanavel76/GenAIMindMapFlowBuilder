@@ -1,5 +1,6 @@
 import AudioModal from '../modals/AudioModal.jsx';
 import CSVModal from '../modals/CSVModal.jsx';
+import XLSXModal from '../modals/XLSXModal.jsx';
 import ImgModal from '../modals/ImgModal.jsx';
 import MDModal from '../modals/MDModal.jsx';
 import PDFModal from '../modals/PDFModal.jsx';
@@ -20,6 +21,9 @@ const setDataSourceModal = (name, pushNode) => {
             break;
         case 'csv':
             pushNode(CSVModal);
+            break;
+        case 'xlsx':
+            pushNode(XLSXModal);
             break;
         case 'web':
             pushNode(WEBModal);

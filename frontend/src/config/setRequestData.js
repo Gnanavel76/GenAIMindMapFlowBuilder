@@ -15,6 +15,13 @@ const setRequestData = (component_name, flow_id, data) => {
 			formData.append("header_row", data.header_row)
 			return ["component-create-csv", formData, "multipart/form-data"]
 			break;
+		case "xlsx":
+			const xlsxFormData = new FormData();
+			xlsxFormData.append("file", data.file)
+			xlsxFormData.append("flow_id", flow_id)
+			xlsxFormData.append("header_row", data.header_row)
+			return ["component-create-xlsx", xlsxFormData, "multipart/form-data"]
+			break;
 		case "pdf":
 			const pdfFormData = new FormData();
 			pdfFormData.append("file", data.file)

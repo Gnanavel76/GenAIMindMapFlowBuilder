@@ -991,6 +991,8 @@ code {
   color: var(--font-color);
   font-weight: 700;
   font-size: 0.875rem;
+  justify-content: center;
+  align-items: center;
 }
 
 #save-button:hover {

@@ -1,4 +1,5 @@
 import CSVSvg from "../assets/csv.svg";
+import XLSXSvg from "../assets/xlsx.svg";
 import SQLSvg from "../assets/sql.svg";
 import PDFSvg from "../assets/pdf.svg"
 import WEBSvg from "../assets/web.svg"
@@ -24,6 +25,12 @@ const setDataSource = (data) => {
 		case ("csv"):
 			return {
 				img: CSVSvg,
+				title: "Source",
+				content: data.content
+			}
+		case ("xlsx"):
+			return {
+				img: XLSXSvg,
 				title: "Source",
 				content: data.content
 			}

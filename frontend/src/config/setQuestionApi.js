@@ -18,6 +18,15 @@ const setQuestionApi = (component_name, flow_id, data, question, node_id, queryT
 				"request_type": queryType
 			}, "application/json"]
 			break;
+		case "xlsx":
+			return ["xlsx-component-qa", {
+				"flow_id": flow_id,
+				"query": question,
+				"component_id": data.component_id,
+				"node_id": node_id,
+				"request_type": queryType
+			}, "application/json"]
+			break;
 		case "pdf":
 			return ["pdf-component-qa", {
 				"flow_id": flow_id,

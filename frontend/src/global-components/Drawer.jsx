@@ -57,7 +57,8 @@ const Drawer = ({ isDrawer, setIsDrawer, flowList, setFlowList }) => {
             .catch((err) => manageErrors(err));
     };
 
-    const newFlowModal = () => {
+    const newFlowModal = (e) => {
+        e.stopPropagation()
         setIsViewFlowModal(true)
     }
 
@@ -105,6 +106,7 @@ const Drawer = ({ isDrawer, setIsDrawer, flowList, setFlowList }) => {
     return (
         <div
             className="drawer-container"
+            onClick={() => setIsDrawer(false)}
             style={isDrawer ? { display: 'block' } : { display: 'none' }}
         >
             <div className="drawer">
